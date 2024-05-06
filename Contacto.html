@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <style>
+        header {
+
+            background-image: url('img/fondo.jpg');
+            background-size: cover;
+            text-align: center;
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 10px;
+
+            padding: 30px;
+            justify-content: space-between;
+            color: aliceblue;
+            border-radius: 15px;
+        }
+
+        .cabecera {
+            display: flex;
+
+            align-items: center;
+            /*alinea h1*/
+            justify-content: center;
+
+        }
+
+        h1 {
+            padding: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 50%;
+            /* Ajustado a 50% para obtener un círculo perfecto */
+        }
+
+        body {
+            font-family: sans-serif;
+            flex-direction: column;
+            display: flex;
+
+            margin: 0;
+        }
+
+        .cuerpo {
+            display: flex;
+            flex: 1;
+            height: 100%;
+        }
+
+        .sidebar {
+
+            background: #b8dfeb;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+
+        }
+
+        .nav-item {
+
+            list-style: none;
+            /* Eliminar las viñetas */
+            margin-bottom: 10px;
+            /* Agregar espacio entre elementos */
+            color: white;
+        }
+
+        .nav-item button {
+            border-radius: 15px;
+            background: rgb(55, 76, 196);
+            text-align: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-item a {
+            color: #e4e4e4;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        /*iconos*/
+        .nav-links .nav-item button {
+
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: antiquewhite;
+
+            padding: 5px;
+
+
+            margin-top: 15px;
+        }
+
+
+        .nav-item a:link {
+            text-decoration: none;
+            /* Quitar subrayado del enlace */
+
+            margin-right: 5px;
+            /* Agregar espacio entre ícono y texto */
+            margin-left: 5px;
+            /* Agregar espacio alrededor del ícono */
+            font-size: 18px;
+            /* Tamaño del ícono */
+
+        }
+
+        .nav-item.inicio button {
+            border-color: #e4e4e4;
+            /* Color de borde diferente para el elemento "Inicio" */
+            padding: 4px;
+            text-align: center;
+            background: gray;
+            border-radius: 15px;
+            ;
+            width: 70%;
+            /* Ancho más estrecho para el botón de "Inicio" */
+            float: right;
+            /* Alinear a la derecha */
+        }
+
+        .nav-item.nav-item.MiArchivo button {
+            border-color: #e4e4e4;
+            /* Color de borde diferente para el elemento "Inicio" */
+            padding: 4px;
+            text-align: center;
+            background: rgb(2, 41, 43);
+            border-radius: 15px;
+            ;
+        }
+
+        .nav-item.inicio button:hover {
+            background-color: rgb(13, 218, 47);
+        }
+
+        .nav-item button:hover {
+            background-color: rgb(13, 218, 47);
+        }
+
+        .nav-item.inicio i {
+            color: #b8d60f;
+            /* Color de ícono diferente para el elemento "Inicio" */
+
+        }
+
+        .nav-item.MiArchivo button:hover {
+            background-color: rgb(13, 218, 47);
+        }
+
+        /* .nav-item a:visited
+        {
+            color: brown;
+        }-*/
+
+
+
+        .message-space {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 25px 25px 25px;
+        }
+
+
+
+
+
+        /*--------------------------------------------*/
+        .centro {
+            flex: 2 1 0;
+            padding: 24px;
+            border-style: solid;
+            border-radius: 15px;
+            border-width: 1px;
+            margin-top: 7px;
+            margin-left: 7px;
+            margin-right: 7px;
+            text-align: center;
+
+        }
+
+        footer {
+            font-family: sans-serif;
+            background-color: darksalmon;
+            color: black;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 15px;
+            margin: 7px;
+            
+         }
+         .container
+         {
+            max-width: 1200px;
+            margin:0;
+            padding: 0;
+         }
+         .footer-row
+         {
+            display: flex;
+            flex-wrap: wrap;
+            
+         }
+         .footer-links ul{
+            list-style: none;
+            /* Eliminar las viñetas */
+            padding: 0;
+        
+            
+         }
+         .footer-links li {
+            list-style: none;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center; /* Alinear verticalmente el contenido */
+        }
+         .footer-links
+         {
+            
+            width: 25%;
+            padding: 0 15px;
+         }
+         .footer-links h4{
+            font-size: 20px;
+            margin-top: 25px;
+            font-weight: 500;
+            width: 25%;
+            padding: 0 ;
+            margin:0;
+         }
+         .developer {
+            
+            margin-left: auto;
+         }
+    </style>
+</head>
+<header>
+    <div class="cabecera">
+        <div id="list-main-image">
+            <img src="img/moneda.jpg" alt="foto" title="foto-perfil" width="120" height="120" alt="foto">
+        </div>
+
+        <h1>Cotizador de Monedas</h1>
+
+
+    </div>
+</header>
+
+<body>
+
+    <div class="cuerpo">
+        <div class="sidebar">
+            <ul class="nav-links">
+                <li class="nav-item inicio"><button><i class="fas fa-home"></i> <a href=#>Inicio</a></button></li>
+                <li class="nav-item MiArchivo"><button><i class="fas fa-folder"></i> <a href=#>Mi Archivo</a></button>
+                </li>
+                <li class="nav-item"><button><i class="fas fa-file"></i><a href=#>Informes</a></button></li>
+                <li class="nav-item"><button><i class="fas fa-address-card"></i><a href=#>Contactenos</a></button></li>
+            </ul>
+            <div class="message-space">
+                <!-- Contenido del espacio para mensajes -->
+                <p>Espacio para mensajes</p>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="centro">Zona central</div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>INSTITUCIONAL</h4>
+                    <ul>
+                        <li><a href="#">>¿quienes somos?</a></li>
+                        <li><a href="#">>Socios estrategicos</a></li>
+                        <li><a href="#">>Trabaje con Nosotros</a></li>
+                        <li><a href="#">>Ayuda</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>ACCESOS</h4>
+                    <ul>
+                        <li><a href="#">>Inicio</a></li>
+                        <li><a href="#">>Mi Archivo</a></li>
+                        <li><a href="#">>Informes</a></li>
+                        <li><a href="#">>Contactenos</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li>Universidad Tecnológica Nacional</li>
+                        <li>Zeballos 1341-S2000BQA</li>
+                        <li>ROSARIO</li>
+                        <li>0341-4481871</li>
+                    </ul>
+                    <div class="developer">
+                        <p>Desarrollado por
+                            Nombre y Apellido
+                            TUP00-2024</p>
+                    </div>
+               
+
+            </div>
+        </div>
+        <section></section>
+    </footer>
+</body>
+
+</html>
