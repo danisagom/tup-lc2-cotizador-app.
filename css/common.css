@@ -1,0 +1,286 @@
+.section-cabecera {
+
+    background-image: url('img/fondo.jpg') !important;
+    background-size: cover;
+    text-align: center;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+
+    padding: 30px;
+    justify-content: space-between;
+    color: rgb(254, 240, 255);
+    border-radius: 15px !important;
+}
+
+.cabecera {
+    display: flex;
+    background-color: #555d6d;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid black; /* Añadir un borde de 2px de ancho y color negro */
+    border-radius: 15px;
+    padding: 10px; /* Añadir un relleno para separar el contenido del borde */
+}
+
+
+.cabecera h1 {
+    padding: 10px;
+    color:black;
+}
+
+.cabecera img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 50%;
+    /* Ajustado a 50% para obtener un círculo perfecto */
+}
+
+body {
+    font-family: sans-serif;
+    flex-direction: column;
+    display: flex;
+
+    margin: 0;
+}
+
+.cuerpo {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+.sidebar {
+
+    background: #b8dfeb;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+
+}
+
+.nav-item {
+
+    list-style: none;
+    /* Eliminar las viñetas */
+    margin-bottom: 10px;
+    /* Agregar espacio entre elementos */
+    color: white;
+}
+
+.nav-item button {
+    border-radius: 15px;
+    background: rgb(55, 76, 196);
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item a {
+    color: #e4e4e4;
+    padding: 5px;
+    display: inline-block;
+}
+
+/*iconos*/
+.nav-links .nav-item button {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: antiquewhite;
+
+    padding: 5px;
+
+
+    margin-top: 15px;
+}
+
+
+.nav-item a:link {
+    text-decoration: none;
+    /* Quitar subrayado del enlace */
+
+    margin-right: 5px;
+    /* Agregar espacio entre ícono y texto */
+    margin-left: 5px;
+    /* Agregar espacio alrededor del ícono */
+    font-size: 18px;
+    /* Tamaño del ícono */
+
+}
+
+.nav-item.inicio button {
+    border-color: #e4e4e4;
+    /* Color de borde diferente para el elemento "Inicio" */
+    padding: 4px;
+    text-align: center;
+    background: gray;
+    border-radius: 15px;
+
+    width: 70%;
+    /* Ancho más estrecho para el botón de "Inicio" */
+    float: right;
+    /* Alinear a la derecha */
+}
+
+.nav-item.nav-item.MiArchivo button {
+    border-color: #e4e4e4;
+    /* Color de borde diferente para el elemento "Inicio" */
+    padding: 4px;
+    text-align: center;
+    background: rgb(2, 41, 43);
+    border-radius: 15px;
+    ;
+}
+
+.nav-item.inicio button:hover {
+    background-color: rgb(13, 218, 47);
+}
+
+.nav-item button:hover {
+    background-color: rgb(13, 218, 47);
+}
+
+.nav-item.inicio i {
+    color: #b8d60f;
+    /* Color de ícono diferente para el elemento "Inicio" */
+
+}
+
+.nav-item.MiArchivo button:hover {
+    background-color: rgb(13, 218, 47);
+}
+
+/* .nav-item a:visited
+{
+    color: brown;
+}-*/
+
+.chat-container {
+    background-color: #f2f2f2; /* Color de fondo del contenedor del chat */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 20px; /* Margen superior para separarlo de los botones */
+    width: 300px; /* Ancho del contenedor del chat */
+    border-radius: 75px 75px ;
+    text-align: center;
+}
+
+.user-profile {
+    margin-top: 20px; /* Margen superior para separar el perfil de usuario del contenedor del chat */
+    text-align: center; /* Centra el contenido del perfil */
+}
+
+.user-avatar {
+    width: 50px; /* Ancho de la imagen de perfil */
+    height: 50px; /* Altura de la imagen de perfil */
+    border-radius: 50%; /* Borde redondeado para hacer que la imagen sea circular */
+    margin-bottom: 10px; /* Margen inferior para separar la imagen del texto */
+}
+
+/*--------------------------------------------*/
+.centro {
+display: flex;
+    flex: 2 1 0;
+    
+    border-style: solid;
+
+    border-width: 1px;
+    
+    margin-left: 7px;
+    margin-right: 0;
+    text-align: center;
+    padding: 0;
+    border-radius:15px;
+    margin-top: 15px;
+    
+}
+
+footer {
+    
+
+    font-family: sans-serif;
+    background-color: rgb(74, 84, 143);
+    color: black;
+    text-align: center;
+    padding: 0;
+    border-radius: 15px;
+    margin-left: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 5px;
+    margin-top: 7px;
+    margin-right: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.footer-links a {
+    color: black;
+
+}
+
+.footer-links ul {
+    list-style: none;
+    /* Eliminar las viñetas */
+    padding: 0;
+
+
+
+}
+
+.footer-links li {
+
+    list-style: none;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    /* Alinear verticalmente el contenido */
+}
+
+.footer-links {
+    flex: 1 1 0;
+    margin-right: 20px;
+
+}
+
+.footer-links h4 {
+
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 500;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.developer {
+    padding: 20px;
+
+    margin-left: auto;
+
+}
+
+h2 a {
+    color: black;
+}
+
+.pie {
+    text-align: center;
+    flex-basis: 100%;
+}
