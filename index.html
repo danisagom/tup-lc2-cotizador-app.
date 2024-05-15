@@ -9,34 +9,30 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
-
 
 <body>
     <header>
         <div class="cabecera">
-        
-                
-               
-
             <div id="item">
                 <img src="img/moneda.jpg" alt="foto" title="foto-perfil" width="120" height="120" alt="foto">
             </div>
-              <div id="item">
-            <h1>Cotizador de Monedas</h1>
-        </div>
+            <div id="item">
+                <h1>Cotizador de Monedas</h1>
+            </div>
             </section>
         </div>
 
     </header>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">inicio</li>
+            <li class="breadcrumb-item active" aria-current="page">inicio</li>
         </ol>
-      </nav>
-      
+    </nav>
+
     <div class="main">
         <div class="sidebar">
             <ul class="nav-links">
@@ -45,37 +41,36 @@
                 <li class="nav-item MiArchivo"><button><i class="fas fa-folder"></i> <a
                             href="Miarchivo.html">Miarchivo</a></button>
                 </li>
-                <li class="nav-item"><button><i class="fas fa-file"></i><a href="informes.html">Informes</a></button></li>
-                <li class="nav-item"><button><i class="fas fa-address-card"></i><a href="Contacto.html">Contacto</a></button></li>
+                <li class="nav-item"><button><i class="fas fa-file"></i><a href="informes.html">Informes</a></button>
+                </li>
+                <li class="nav-item"><button><i class="fas fa-address-card"></i><a
+                            href="Contacto.html">Contacto</a></button></li>
             </ul>
             <!----------->
             <div id="wrapper">
-
-
-
                 <!-- Contenedor del chat -->
                 <div class="chat-container">
                     <div id="chatbox">
-                        <!-- Aquí se mostrarán los mensajes del chat -->
+
                         <div class="message">
                             <img src="img/usuario1.jpg" alt="Usuario 1" class="user-avatar">
                             <p class="username">Ana:</p>
                             <p class="message-content">¡Hola! ¿Cómo están todos?</p>
-                        </div>
+                        
                         <div class="message">
                             <img src="img/usuario2.jpg" alt="Usuario 2" class="user-avatar">
                             <p class="username">Nico:</p>
                             <p class="message-content">¡Hola Ana! Estoy bien, ¿y tú?</p>
-                        </div>
-                        <!-- Agrega más mensajes según sea necesario -->
-                    
 
-                    <!-- Formulario para enviar mensajes -->
-                    <form name="message" action="">
-                        <input name="usermsg" type="text" id="usermsg" size="5" />
-                        <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
-                    </form>
-                </div>
+                            <!-- Formulario-->
+                            <form name="message" action="">
+                                <input name="usermsg" type="text" id="usermsg" size="2" />
+                                <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+                            </form>
+                        </div>
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -85,7 +80,7 @@
 
             <section id="contenedor_central">
                 <h3>Pizarra de Cotizaciones</h3>
-                 <div class="seleccion-dolar">
+                <div class="seleccion-dolar">
                     <label for="moneda">Selecciona una moneda:</label>
                     <select id="moneda">
                         <option value="todas">TODAS</option>
@@ -100,16 +95,77 @@
                         <option value="Peso-Chileno">Peso Chileno</option>
                         <option value="Peso-Uruguayo">Peso Uruguayo </option>
 
-                        <!-- Agrega las otras opciones del combo box aquí -->
-                     </select>
+
+                    </select>
                     <button id="buscar">Buscar</button>
 
                 </div>
+                <div class="container-valores">
+
+                    <div class="item-moneda">
+                        <div class="titulo-a">OFICIAL</div>
+                        <div class="titulo">compra</div>
+                        <div class="titulo">venta</div>
+                        <div class="titulo"></div>
+                        <div class="valor">1050</div>
+                        <div class="valor">800</div>
+                    </div>
+                    <div><i class="bi bi-star-fill star"></i></div>
+                    <div class="item-moneda">
+                        <div class="titulo-a">BLUE</div>
+                        <div class="titulo">COMPRA</div>
+                        <div class="titulo">VENTA</div>
+                        <div class="titulo"></div>
+                        <div class="valor">1050</div>
+                        <div class="valor">800</div>
+                    </div>
+                    <div><i class="bi bi-star-fill star"></i></div>
+
+                    <div class="item-moneda">
+                        <div class="titulo-a">TARJETA</div>
+                        <div class="titulo">COMPRA</div>
+                        <div class="titulo">VENTA</div>
+                        <div class="titulo"></div>
+                        <div class="valor">1050</div>
+                        <div class="valor">800</div>
+                    </div>
+                    <div><i class="bi bi-star-fill star"></i></div>
+
+                    <div class="item-moneda">
+                        <div class="titulo-a">MEP</div>
+                        <div class="titulo">COMPRA</div>
+                        <div class="titulo">VENTA</div>
+                        <div class="titulo"></div>
+                        <div class="valor">1050</div>
+                        <div class="valor">800</div>
+                    </div>
+                    <div><i class="bi bi-star-fill star"></i></div>
+                    <div class="item-moneda">
+                        <div class="titulo-a">CCL</div>
+                        <div class="titulo">COMPRA</div>
+                        <div class="titulo">VENTA</div>
+                        <div class="titulo"></div>
+                        <div class="valor">1050</div>
+                        <div class="valor">800</div>
+                    </div>
+
+                    <div><i class="bi bi-star-fill star"></i></div>
+                    <div class="item-moneda">
+                        <div class="titulo-a">CRIPTO</div>
+                        <div class="titulo">COMPRA</div>
+                        <div class="titulo">VENTA</div>
+                        <div class="titulo"></div>
+                        <div class="valor">1050</div>
+                        <div class="valor">800</div>
+                    </div>
+                    <div><i class="bi bi-star-fill star"></i></div>
+                </div>
             </section>
-            
+
         </div>
     </div>
     </div>
+    <h5>datos obtenidos:www.bcra.gob.ar</h5>
     <footer>
         <div class="container">
             <div class="footer-row">
@@ -147,19 +203,19 @@
                 </div>
 
 
-                    <div class="footer-row" id="developer">
-                        <p>Desarrollado por
-                            Nombre y Apellido
-                            TUP00-2024</p>
-                    </div>
-
+                <div class="footer-row" id="developer">
+                    <p>Desarrollado por
+                        Nombre y Apellido
+                        TUP00-2024</p>
                 </div>
+
             </div>
+        </div>
 
 
-            <div class="pie">
-                <p>TUP 107-Catedra de laboratorio de computacion 2 -año 2024</p>
-            </div>
+        <div class="pie">
+            <p>TUP 107-Catedra de laboratorio de computacion 2 -año 2024</p>
+        </div>
     </footer>
 </body>
 

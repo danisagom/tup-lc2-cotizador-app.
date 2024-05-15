@@ -66,7 +66,7 @@ body {
 .main {
     display: flex;
     gap: 2px;
-    min-height: 100vh;
+    
     font-family: sans-serif;
     margin-top: 0.2px;
 
@@ -81,13 +81,15 @@ body {
 
 .main .sidebar {
     background: rgb(133, 215, 239);
-    flex: 1;
+    flex: 1/2;
+    height: 110vh;
 
 }
 
 .main .contenido {
     background: rgb(193, 219, 210);
-    flex: 55%;
+    flex: 4;
+    height: 110vh;
 }
 
 
@@ -158,9 +160,9 @@ body {
     /* Quitar subrayado del enlace */
 
     margin-right: 5px;
-    /* Agregar espacio entre ícono y texto */
+    /* Agrega espacio entre ícono y texto */
     margin-left: 5px;
-    /* Agregar espacio alrededor del ícono */
+    /* Agrega espacio alrededor del ícono */
     font-size: 18px;
     /* Tamaño del ícono */
 
@@ -225,14 +227,14 @@ body {
     width: 100%;
     /* Ajustar al ancho del sidebar */
     box-sizing: border-box;
-    /* Incluir padding y borde en el ancho */
+    /*  padding y borde en el ancho */
     height: 100vh;
 
-    max-width: 80%;
+    max-width: 100%;
 
     padding: 10px;
     /* Espaciado interno */
-    margin-top: 20px;
+    margin-top: 5px;
     /* Margen superior para separarlo de los botones */
     overflow-y: auto;
     /* Habilitar desplazamiento vertical cuando el contenido es más largo */
@@ -240,6 +242,7 @@ body {
     /* Ancho del contenedor del chat */
     border-radius: 55px 55px;
     text-align: center;
+    
 }
 
 
@@ -247,14 +250,17 @@ body {
     background-color: #f2f2f2;
     /* Color de fondo del contenedor del chat */
     border-radius: 25px 25px;
+    height: 50vh;
+    
 }
 
 
 .user-profile {
-    margin-top: 20px;
-    /* Margen superior para separar el perfil de usuario del contenedor del chat */
+    margin-top: none;
+    /* Margen superior para separar  contenedor del chat */
     text-align: center;
     /* Centra el contenido del perfil */
+    height: 50vh;
 }
 
 .user-avatar {
@@ -263,7 +269,7 @@ body {
     height: 50px;
     /* Altura de la imagen de perfil */
     border-radius: 50%;
-    /* Borde redondeado para hacer que la imagen sea circular */
+    /* Borde para hacer que la imagen sea circular */
     margin-bottom: 10px;
     /* Margen inferior para separar la imagen del texto */
 }
@@ -278,24 +284,95 @@ body {
 }
 
 .seleccion-dolar {
-    border: solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
     padding: 5px;
-    border-radius: solid ;
+    border-radius: 25px 25px;
     background-color: #b2b3ac;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
     height:10%;
     align-items: center;
-    width:35vh;
+    width:75%;
 }
 
 .breadcrumb{
     list-style: none;
     /* Eliminar las viñetas */
 }
+/*container principal*/
+.container-valores {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: auto auto auto auto;
+    
+    
+    padding: 5vh;
+    background-color:#bbb;
+    border-radius: 25px 25px;
+    grid-gap: 15px;
+    row-gap: 15px;
+    align-items: center;
+    /* Alinear verticalmente */
+    width: 100%;
+    height: 75vh;
+}
+
+.item-moneda {
+    background-color: aliceblue;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas */
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+margin-left: 0px;
+
+}
+.item-a 
+{
+    padding:10;
+    text-align: center;
 
 
+}
 
+
+.titulo {
+    color:gray;
+    
+    text-align:center;  
+}
+.titulo-a
+{
+font-weight: bold;
+
+}
+.valor {
+    font-size: 10px;
+    color: rgb(4, 14, 4);
+}
+
+.star {
+    font-size: 15px;
+    color: #363434;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.star:hover {
+    color: darkblue
+}
+h5{
+    text-align: end;
+}
 
 /*-----------------------------*/
 footer {
