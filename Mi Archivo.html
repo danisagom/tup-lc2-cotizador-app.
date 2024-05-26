@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>COTIZADOR DE MONEDAS</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<body>
+    <header>
+        <div class="item-imagen">
+            <div id="item">
+                <img src="img/moneda.jpg" alt="foto" title="foto-perfil" width="120" height="120" alt="foto">
+            </div>
+            <div id="item-titulo">
+                <h1>Cotizador de Monedas</h1>
+            </div>
+            </section>
+        </div>
+    </header>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Mi Archivo</li>
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        </ol>
+    </nav>
+    <!--Seccion para mensajes al usuario-->
+    <section id="sec-messages">
+        <div id="msg-container">
+            <div class="msg-divs msg-exito" id="msg-1">
+                <p class="msg-text"><svg class="svg-icons" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
+                    </svg> Se agregó con éxito el resultado del informe</p>
+            </div>
+            <div class="msg-divs msg-error" id="msg-2">
+                <p class="msg-text"><svg class="svg-icons" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+                    </svg> Error. Se produjo un error al intentar agregar resultados al informe</p>
+            </div>
+            <div class="msg-divs msg-incompleto" id="msg-3">
+                <p class="msg-text"><svg class="svg-icons" xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                        viewBox="0 0 64 512">
+                        <path
+                            d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                    </svg> La operación no se pudo completar</p>
+            </div>
+        </div>
+    </section>
+    <div class="main">
+        <div class="sidebar">
+            <ul class="nav-links">
+                <li class="nav-item inicio"><button><i class="fas fa-home"></i> <a href="index.html">Inicio</a></button>
+                </li>
+                <li class="nav-item MiArchivo"><button><i class="fas fa-folder"></i> <a href="Mi Archivo.html">Mi
+                            Archivo</a></button>
+                </li>
+                <li class="nav-item"><button><i class="fas fa-file"></i><a href="informes.html">Informes</a></button>
+                </li>
+                <li class="nav-item"><button><i class="fas fa-address-card"></i><a
+                            href="Contacto.html">Contacto</a></button></li>
+            </ul>
+            <!--chat-->
+            <div id="wrapper">
+                <div class="chat-container">
+                    <div id="chatbox">
+
+                        <div class="message">
+                            <img src="img/usuario1.jpg" alt="Usuario 1" class="user-avatar">
+                            <p class="username">Ana:</p>
+                            <p class="message-content">¡Hola! ¿Cómo están todos?</p>
+                        </div>
+                        <div class="message">
+                            <img src="img/usuario2.jpg" alt="Usuario 2" class="user-avatar">
+                            <p class="username">Nico:</p>
+                            <p class="message-content">¡Hola Ana! Estoy bien, ¿y tú?</p>
+                        </div>
+                        <!-- Formulario para enviar mensajes -->
+                        <form name="message" action="">
+                            <input name="usermsg" type="text" id="usermsg" size="5" />
+                            <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contenido">
+
+            <h3>MI ARCHIVO</h3>
+            <h5><button><i class="bi bi-printer"></i></button></h5>
+            <div class="container-archivo">
+                <div class="item-archivo item-aa">fecha</div>
+                <div class="item-archivo item-bb">moneda</div>
+                <div class="item-archivo item-cc">compra</div>
+                <div class="item-archivo item-dd">venta</div>
+                <div class="item-archivo item-ee">accion</div>
+                <div class="item-relleno item-2">bb</div>
+                <div class="item-relleno item-3">nn</div>
+                <div class="item-relleno item-4">nn</div>
+                <div class="item-relleno item-5">
+                    <button type="reset"> <i class="bi bi-trash-fill"></i></button>
+                </div>
+
+                <div class="item-relleno item-7">bb</div>
+                <div class="item-relleno item-8">nn</div>
+                <div class="item-relleno item-9">nn</div>
+                <div class="item-relleno item-10">
+                    <button type="reset"> <i class="bi bi-trash-fill"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+    <h5>datos obtenidos:www.bcra.gob.ar
+        <footer>
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>INSTITUCIONAL</h4>
+                        <ul>
+                            <li><a href="#">>¿quienes somos?</a></li>
+                            <li><a href="#">>Socios estrategicos</a></li>
+                            <li><a href="#">>Trabaje con Nosotros</a></li>
+                            <li><a href="#">>Ayuda</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>ACCESOS</h4>
+                        <ul>
+                            <li><a href="#">>Inicio</a></li>
+                            <li><a href="#">>Mi Archivo</a></li>
+                            <li><a href="#">>Informes</a></li>
+                            <li><a href="#">>Contactenos</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>CONTACTO</h4>
+                        <ul>
+                            <li>Universidad Tecnológica Nacional</li>
+                            <li>Zeballos 1341-S2000BQA</li>
+                            <li>ROSARIO</li>
+                            <li>0341-4481871</li>
+
+                        </ul>
+                        <h2><a href="tel:+3415111580">¡ESCRIBANOS!</a></h2>
+
+                    </div>
+
+
+                    <div class="footer-row" id="developer">
+                        <p>Desarrollado por
+                            Nombre y Apellido
+                            TUP00-2024</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="pie">
+                <p>TUP 107-Catedra de laboratorio de computacion 2 -año 2024</p>
+            </div>
+        </footer>
+</body>
+
+</html>
